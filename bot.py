@@ -9,7 +9,7 @@ import anthropic
 # ─────────────────────────────────────────
 #  Yapılandırma
 # ─────────────────────────────────────────
-DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", "BOT_TOKEN_BURAYA")
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", "ODgxODk3MDc5NjY3MDQ0Mzky.GV9J6i.6NeMgCdeQbjnwfY315RoetufbCcvUZ_MkWVC7I")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "ANTHROPIC_KEY_BURAYA")
 
 intents = discord.Intents.default()
