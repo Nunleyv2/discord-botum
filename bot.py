@@ -24,16 +24,15 @@ music_queues: dict[int, list] = {}
 voice_clients: dict[int, discord.VoiceClient] = {}
 
 YDL_OPTIONS = {
-    "format": "bestaudio[ext=opus]/bestaudio[ext=webm]/bestaudio[ext=m4a]/bestaudio",
-    "noplaylist": True,
-    "quiet": True,
-    "default_search": "ytsearch",
-    "cookiefile": "cookies.txt",
-    "source_address": "0.0.0.0",
-    "nocheckcertificate": True,
-    "http_headers": {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    },
+    'format': 'bestaudio/best',
+    'noplaylist': True,
+    'quiet': True,
+    'no_warnings': True,
+    'source_address': '0.0.0.0',
+    'postprocessors': [{
+        'key': 'FFmpegExtractAudio',
+        'preferredcodec': 'opus',
+    }],
 }
 FFMPEG_OPTIONS = {
     "before_options": "-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5 -nostdin",
