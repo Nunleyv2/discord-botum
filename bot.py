@@ -8,7 +8,7 @@ import yt_dlp
 # ─────────────────────────────────────────
 #  Yapılandırma
 # ─────────────────────────────────────────
-DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", "ODgxODk3MDc5NjY3MDQ0Mzky.GV9J6i.6NeMgCdeQbjnwfY315RoetufbCcvUZ_MkWVC7I")
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", "BURAYA")
 
 intents = discord.Intents.default()
 intents.message_content = True
